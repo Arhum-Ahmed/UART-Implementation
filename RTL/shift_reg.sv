@@ -1,4 +1,11 @@
-module shift_reg(input logic clk, load,shift,reset, input logic [7:0] data, output logic y );
+module shift_reg(
+    input logic clk, 
+    input logic load, 
+    input logic shift, 
+    input logic reset, 
+    input logic [7:0] data, 
+    output logic y 
+    );
 
     logic [7:0] register;
     

@@ -1,4 +1,8 @@
-module baud_counter(input logic clk, reset, output logic [13:0] y );
+module baud_counter(
+    input logic clk, 
+    input logic reset, 
+    output logic [13:0] y 
+    );
 
     always_ff @(posedge clk)
     begin

@@ -1,4 +1,9 @@
-module bit_counter(input logic clk, reset, en,output logic [3:0] y );
+module bit_counter(
+    input logic clk, 
+    input logic reset, 
+    input logic en,
+    output logic [3:0] y 
+    );
 
     always_ff @(posedge clk)
     begin

@@ -1,4 +1,8 @@
-module comparator_bit(input logic [3:0] a,b, output logic y );
+module comparator_bit(
+    input logic [3:0] a,
+    input logic [3:0] b, 
+    output logic y 
+    );
 
 always_comb
 begin

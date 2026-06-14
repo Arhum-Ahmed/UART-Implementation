@@ -4,8 +4,14 @@ module tb;
     logic [7:0] data_i;
 	logic serial_out_o ;
 	
-	main DUT (.clk_i(clk_i), .load_byte_i(load_byte_i), .t_byte_i(t_byte_i), 
-	.data_i(data_i), .reset_i(reset_i), .serial_out_o(serial_out_o));
+	main DUT (
+		.clk_i(clk_i), 
+		.load_byte_i(load_byte_i), 
+		.t_byte_i(t_byte_i), 
+		.data_i(data_i), 
+		.reset_i(reset_i), 
+		.serial_out_o(serial_out_o)
+		);
 	
 	initial 
 	begin

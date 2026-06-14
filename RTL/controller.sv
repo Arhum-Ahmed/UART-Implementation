@@ -1,5 +1,18 @@
-module controller (input logic clk_i, reset_i, byte_ready_i, counter_baud_of_i, counter_of_i, t_byte_i, 
-output logic load_xmt_dreg_o, load_xmt_shftreg_o, start_o, clear_o, clear_baud_o,shift_o, en_counter);
+module controller (
+    input logic clk_i, 
+    input logic reset_i, 
+    input logic byte_ready_i, 
+    input logic counter_baud_of_i, 
+    input logic counter_of_i, 
+    input logic t_byte_i, 
+    output logic load_xmt_dreg_o, 
+    output logic load_xmt_shftreg_o, 
+    output logic start_o, 
+    output logic clear_o, 
+    output logic clear_baud_o, 
+    output logic shift_o, 
+    output logic en_counter
+);
 
     localparam s0 = 2'b00;
     localparam s1 = 2'b01;

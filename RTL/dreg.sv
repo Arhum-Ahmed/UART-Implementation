@@ -1,4 +1,10 @@
-module dreg (input logic clk, reset,input logic [7:0] in, input logic en ,output logic [7:0] out);
+module dreg (
+	input logic clk, 
+	input logic reset,
+	input logic [7:0] in, 
+	input logic en,
+	output logic [7:0] out
+	);
 
 	always_ff @(posedge clk)
 	begin

@@ -1,4 +1,8 @@
-module comparator_baud(input logic [13:0] a,b, output logic y );
+module comparator_baud(
+    input logic [13:0] a,
+    input logic [13:0] b, 
+    output logic y 
+    );
 
 always_comb
 begin
